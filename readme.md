@@ -16,8 +16,8 @@ No mínimo, as consultas deverão ser realizadas nos seguintes mecanismos:<br />
 <li>Have I Been Pwned
 <li>Mozilla Monitor
 <li>Cybernews
-<li>F-Secure
-b. Crie um Docker para que este script possa ser executado dentro de um ambiente contenerizado<br />
+<li>F-Secure<br /><br />
+b. Crie um Docker para que este script possa ser executado dentro de um ambiente contenerizado<br /><br />
 c. Submeta estes arquivos para um repositório do GitHub e compartilhe o link (github.com/seu-usuario/seu-projeto.git) como resposta desta questão.<br />
 <br />
 Como será validado esta questão:<br />
