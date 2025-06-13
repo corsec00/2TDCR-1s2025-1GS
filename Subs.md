@@ -2,6 +2,7 @@ Aluno elegível: RM556874<br />
 Matéria: CLOUD SECURITY (APPSEC And DEVSECOPS)<br />
 Professor: Leonardo Santos Silva<br />
 Prazo para a entrega: 13/Jun/2025 - 21:00 <br />
+Envio da Resposta: Contato direto com o Professor via MS Teams<br />
 Total: 10 Pts<br />
  ## MetaSploit de qualquer lugar!
 
