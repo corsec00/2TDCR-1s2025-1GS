@@ -2,12 +2,13 @@
 
 O [Metasploit](https://www.metasploit.com) é uma ferramenta poderosa (e perigosa) que pode ser usada para explorar e atacar sistemas remotos. Entretanto, vc precisa ter contigo uma VM ou um computador físico com ele instalado (ou com o KALI) toda vez que quiser usá-lo.<br />
 Ao escutar a reclamação deste problema dos seus colegas, vc teve uma ideia: E se instala-lo via Containers e executa-lo via Kubernetes, para que seja acessível de qualquer lugar?<br />
-Esta é a sua tarefa: <br />
+Esta é a sua tarefa! <br />
 
 
 <br />
+### DICAS: ###
 Não há problema em usar mecanismos de IA para as tarefas. Mas lembre-se, se a IA alucinar ou fornecer respostas erradas, quem perde pontos é vc.<br />
-Dica: use linhas de comando (CLI). Isso faz com que o trabalho ande rápido e mais eficiente. <br />
+Uuse linhas de comando (Azure CLI). Isso faz com que o trabalho ande rápido e mais eficiente. Se quiser, inclua um arquivo PS1 no seu repositório para validar o progresso na execução das atividades<br />
 
 ## Parte 1 (4 pts)
 a. Crie um Dockerfile para que o Metasploit seja instalado automaticamente (dica: use o ambiente do Kali para isso).<br />
