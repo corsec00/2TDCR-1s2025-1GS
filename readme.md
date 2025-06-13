@@ -1,3 +1,5 @@
+# GS FINALIZADA
+## Respostas não são mais aceitas
 ## Senha vazada!
 
 Há uma suspeita de alguns diretores de que seus usuários e respectivas senhas foram vazados na internet.<br />
