@@ -1,13 +1,3 @@
-# GS FINALIZADA
-## Respostas não são mais aceitas
-
-
-Aluno elegível: RM556874<br />
-Matéria: CLOUD SECURITY (APPSEC And DEVSECOPS)<br />
-Professor: Leonardo Santos Silva<br />
-Prazo para a entrega: 13/Jun/2025 - 21:00 <br />
-Envio da Resposta: Contato direto com o Professor via MS Teams<br />
-Total: 10 Pts<br />
  ## MetaSploit de qualquer lugar!
 
 O [Metasploit](https://www.metasploit.com) é uma ferramenta poderosa (e perigosa) que pode ser usada para explorar e atacar sistemas remotos. Entretanto, vc precisa ter contigo uma VM ou um computador físico com ele instalado (ou com o KALI) toda vez que quiser usá-lo.<br />

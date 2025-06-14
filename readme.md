@@ -1,6 +1,9 @@
 # GS FINALIZADA
 ## Respostas não são mais aceitas
-
+<<<<<<< HEAD
+.
+=======
+>>>>>>> 0d100a6a3d370eaadfaac33367869baf93eebd08
 ## Senha vazada!
 
 Há uma suspeita de alguns diretores de que seus usuários e respectivas senhas foram vazados na internet.<br />
