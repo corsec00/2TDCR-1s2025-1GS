@@ -1,44 +1,31 @@
 Clear-Host
 # Correção da prova
-# Variáveis
+# Autor: Leonardo Santos Silva
+# Data: 14/jun/2025
+# Fornecido pelo aluno - Deve ser incluido manualmente
+# ------------- BEGIN -------------
+$dockerImage = "metasploitacrthor.azurecr.io/metasploit-kali:v1"
+$GitHubRepo = "https://github.com/totsxyy/metasploit-cloud"
+# ------------- END -------------
 $resourceGroup = "rg-fiapGS"
 $location = "eastus"
 $DockerResposta = "metasploit-thor"
 $aksName = "aks-metasploitgs"
-# Fornecido pelo aluno
-$dockerImage = "metasploitacrthor.azurecr.io/metasploit-kali:v1"
-$GitHubRepo = "https://github.com/totsxyy/metasploit-cloud"
-
-
 $lastSegment = $GitHubRepo.Split("/")[-1]
 Write-Output $lastSegment
-
-
-# Roda o Docker local para verificar a integridade e funcionamento
 git clone $GitHubRepo 
 cd $lastSegment
 docker build -t $DockerResposta .
 docker run -it $DockerResposta
-
-# Roda o ACR para verificar se está disponível
 docker build -t $dockerImage .
 docker run -it $dockerImage
-
 cd ..
 Clear-Host
-# Login no Azure
+# Ambiente Azure
 az login
-
-# Criar Resource Group
 az group create --name $resourceGroup --location $location
-
-# Criar AKS e vincular ao ACR
 az aks create --resource-group $resourceGroup --name $aksName --node-count 1 --generate-ssh-keys 
-
-# Obter credenciais do AKS
 az aks get-credentials --resource-group $resourceGroup --name $aksName
-
-# Criar arquivo de deployment YAML
 $deploymentYaml = @"
 apiVersion: apps/v1
 kind: Deployment
@@ -78,12 +65,6 @@ spec:
       protocol: TCP
 "@
 $deploymentYaml | Out-File -Encoding ascii metasploit-deployment.yaml
-
-# Aplicar o deployment no AKS
 kubectl apply -f metasploit-deployment.yaml
-
-# Executar Metasploit no AKS
-
 kubectl exec -it $(kubectl get pods -l app=metasploit -o jsonpath="{.items[0].metadata.name}") -- msfconsole
-
 az group delete --name $resourceGroup --yes --no-wait
