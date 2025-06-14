@@ -4,8 +4,8 @@ Clear-Host
 # Data: 14/jun/2025
 # Fornecido pelo aluno - Deve ser incluido manualmente
 # ------------- BEGIN -------------
-$dockerImage = "metasploitacrthor.azurecr.io/metasploit-kali:v1"
-$GitHubRepo = "https://github.com/totsxyy/metasploit-cloud"
+$dockerImage = "<NOME_DO_ACR>.azurecr.io/<NOME_DO_REPO>:<TAG>"
+$GitHubRepo = "https://github.com/<ALUNO>/<REPO>"
 # ------------- END -------------
 $resourceGroup = "rg-fiapGS"
 $location = "eastus"
